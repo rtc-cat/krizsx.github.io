@@ -1,7 +1,13 @@
 baseURL = 'https://krizsx.github.io'
 languageCode = 'zh-CN'
-title = 'My New Hugo Site'
+title = '摆烂'
 theme = 'github-style'
+
+[params.utteranc]
+enable = true
+repo = "krizsx/krizsx.github.io" ##换成自己得
+issueTerm = "pathname"
+theme = "github-dark"
 
 [params]
 author = "KrizsX"
