@@ -1,5 +1,5 @@
 ---
-title: '自用的Go语言规范'
+title: "自用的Go语言规范"
 date: 2023-02-18T15:52:24+08:00
 draft: true
 comment: true
@@ -20,16 +20,8 @@ comment: true
 
 按照一个文件中的编码顺序排列规范内容
 
-## 注释
+## 命名
 
-Google: https://google.github.io/styleguide/go/decisions#comment-line-length
-
-exported 的函数和方法其实都应该写, 不过从实践来看团队无法执行, 摆烂吧
-
-## Package
-
-### 包命名
-
-Google: https://google.github.io/styleguide/go/decisions#package-names
-
-包名会和变量名, 类型名一起出现在代码中, Go 不像其他语言使用`use ste::time::Duration`这种方式声明, 使用时直接使用`Duration`接口, 而 Go 只能通过`time.Duration`来声明, 也就是类型前面都会带上包名, 我在实践过程中遇到很多次这个包名会很长, 不管是 Google 推荐的那种直接小写字母连写`tabwriter`,还是下划线分割`tab_writer`都有点丑, 我个人喜欢下划线, 可读性更好一点吧
+1. 包名用小写下划线分割, snake_case
+2. 接口有 I 开头, `IWorker`
+3. 方法接收者用`self`
